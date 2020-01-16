@@ -15,10 +15,9 @@ namespace NFePHP\Tinus\Common;
  * @link      http://github.com/nfephp-org/sped-nfse-nacional for the canonical source repository
  */
 
-use stdClass;
-use NFePHP\Common\DOMImproved as Dom;
 use DOMNode;
-use DOMElement;
+use NFePHP\Common\DOMImproved as Dom;
+use stdClass;
 
 class Factory
 {

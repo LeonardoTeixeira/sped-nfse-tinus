@@ -15,10 +15,8 @@ namespace NFePHP\Tinus\Common\Soap;
  * @link      http://github.com/nfephp-org/sped-nfse-nacional for the canonical source repository
  */
 
-use NFePHP\Tinus\Common\Soap\SoapBase;
-use NFePHP\Tinus\Common\Soap\SoapInterface;
-use NFePHP\Common\Exception\SoapException;
 use NFePHP\Common\Certificate;
+use NFePHP\Common\Exception\SoapException;
 use Psr\Log\LoggerInterface;
 
 class SoapCurl extends SoapBase implements SoapInterface

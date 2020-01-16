@@ -14,9 +14,7 @@ namespace NFePHP\Tinus\Common\Soap;
  * @author    Roberto L. Machado <linux.rlm at gmail dot com>
  * @link      http://github.com/nfephp-org/sped-nfse-nacional for the canonical source repository
  */
-use NFePHP\Tinus\Common\Soap\SoapBase;
-use NFePHP\Tinus\Common\Soap\SoapInterface;
-use NFePHP\Common\Exception\SoapException;
+
 use NFePHP\Common\Certificate;
 use Psr\Log\LoggerInterface;
 

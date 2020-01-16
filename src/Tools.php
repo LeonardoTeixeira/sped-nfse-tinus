@@ -16,7 +16,6 @@ namespace NFePHP\Tinus;
  */
 
 use NFePHP\Common\Certificate;
-use NFePHP\Common\Validator;
 use NFePHP\Tinus\Common\Tools as BaseTools;
 
 class Tools extends BaseTools
@@ -32,7 +31,7 @@ class Tools extends BaseTools
         $path = realpath(
             __DIR__ . '/../storage/schemes'
         );
-        $this->xsdpath = $path . '/servico_cancelar_justificativa.xsd';
+        $this->xsdpath = $path . '/nfse_v20_08_2015.xsd';
     }
 
     /**
@@ -159,9 +158,7 @@ class Tools extends BaseTools
         }
         $content = '';
         foreach ($arps as $rps) {
-            $xml = $this->putPrestadorInRps($rps);
-            //$xmlsigned = $this->sign($xml, 'InfRps', 'Id');
-            $content .= $xml;
+            $content .= $this->putPrestadorInRps($rps);
         }
         $contentmsg = "<EnviarLoteRpsEnvio>"
             . "<LoteRps id=\"$lote\">"

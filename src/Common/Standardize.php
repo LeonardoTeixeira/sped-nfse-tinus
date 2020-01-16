@@ -16,10 +16,9 @@ namespace NFePHP\Tinus\Common;
  * @link      http://github.com/nfephp-org/sped-nfse-nacional for the canonical source repository
  */
 
-use DOMDocument;
-use stdClass;
 use InvalidArgumentException;
 use NFePHP\Common\Validator;
+use stdClass;
 
 class Standardize
 {
@@ -38,18 +37,13 @@ class Standardize
         'CancelarNfseEnvio',
         'ConsultarLoteRpsEnvio',
         'ConsultarNfseEnvio',
-        'ConsultarNfseFaixaEnvio',
         'ConsultarNfseRpsEnvio',
         'EnviarLoteRpsEnvio',
-        'GerarNfseEnvio',
         'CancelarNfseResposta',
         'ConsultarLoteRpsResposta',
         'ConsultarNfseResposta',
-        'ConsultarNfseFaixaResposta',
         'ConsultarNfseRpsResposta',
         'EnviarLoteRpsResposta',
-        'GerarNfseEnvio',
-        'GerarNfseResposta',
         'RPS'
     ];
     

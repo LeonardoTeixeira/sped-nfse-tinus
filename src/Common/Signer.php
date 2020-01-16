@@ -15,13 +15,13 @@ namespace NFePHP\Tinus\Common;
  * @link      http://github.com/nfephp-org/sped-nfse-nacional for the canonical source repository
  */
 
+use DOMDocument;
+use DOMElement;
+use DOMNode;
 use NFePHP\Common\Certificate;
-use NFePHP\Common\Validator;
 use NFePHP\Common\Certificate\PublicKey;
 use NFePHP\Common\Exception\SignerException;
-use DOMDocument;
-use DOMNode;
-use DOMElement;
+use NFePHP\Common\Validator;
 
 class Signer
 {

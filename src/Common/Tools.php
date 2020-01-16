@@ -129,7 +129,6 @@ class Tools
         $url = sprintf("%s%s.CLS", $url, $operation);
         $request = $this->createSoapRequest($message, $operation);
         $this->lastRequest = $request;
-
         if (empty($this->soap)) {
             $this->soap = new SoapCurl($this->certificate);
         }
