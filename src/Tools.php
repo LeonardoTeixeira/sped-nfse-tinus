@@ -3,16 +3,16 @@
 namespace NFePHP\Tinus;
 
 /**
- * Class for comunications with NFSe webserver in Nacional Standard
+ * Class for comunications with NFSe Tinus Provider
  *
  * @category  NFePHP
  * @package   NFePHP\Tinus
- * @copyright NFePHP Copyright (c) 2008-2020
+ * @copyright NFePHP Copyright (c) 2020
  * @license   http://www.gnu.org/licenses/lgpl.txt LGPLv3+
  * @license   https://opensource.org/licenses/MIT MIT
  * @license   http://www.gnu.org/licenses/gpl.txt GPLv3+
  * @author    Cleiton Perin <cperin20 at gmail dot com>
- * @link      http://github.com/nfephp-org/sped-nfse-nacional for the canonical source repository
+ * @link      http://github.com/nfephp-org/sped-nfse-tinus for the canonical source repository
  */
 
 use NFePHP\Common\Certificate;
@@ -28,10 +28,13 @@ class Tools extends BaseTools
     public function __construct($config, Certificate $cert)
     {
         parent::__construct($config, $cert);
+        //tinus não usa XSD
+        /**
         $path = realpath(
             __DIR__ . '/../storage/schemes'
         );
-        $this->xsdpath = $path . '/nfse_v20_08_2015.xsd';
+        $this->xsdpath = $path . '/nfsetempuri.xsd';
+         */
     }
 
     /**
@@ -59,7 +62,7 @@ class Tools extends BaseTools
         $content = "<CancelarNfseEnvio>"
             . $signed
             . "</CancelarNfseEnvio>";
-        //Validator::isValid($content, $this->xsdpath);
+        //Tinus não usa XSD Validator::isValid($content, $this->xsdpath);
         return $this->send($content, $operation);
     }
 
@@ -78,7 +81,7 @@ class Tools extends BaseTools
             . $this->prestador
             . "<Protocolo>$protocolo</Protocolo>"
             . "</ConsultarLoteRpsEnvio>";
-        //Validator::isValid($content, $this->xsdpath);
+        //Tinus não usa XSD Validator::isValid($content, $this->xsdpath);
         return $this->send($content, $operation);
     }
 
@@ -116,7 +119,7 @@ class Tools extends BaseTools
             $content .= "</Tomador>";
         }
         $content .= "</ConsultarNfseEnvio>";
-        //Validator::isValid($content, $this->xsdpath);
+        //Tinus não usa XSD Validator::isValid($content, $this->xsdpath);
         return $this->send($content, $operation);
     }
 
@@ -138,7 +141,7 @@ class Tools extends BaseTools
             . "</IdentificacaoRps>"
             . $this->prestador
             . "</ConsultarNfseRpsEnvio>";
-        //Validator::isValid($content, $this->xsdpath);
+        //Tinus não usa XSD Validator::isValid($content, $this->xsdpath);
         return $this->send($content, $operation);
     }
 
@@ -158,7 +161,8 @@ class Tools extends BaseTools
         }
         $content = '';
         foreach ($arps as $rps) {
-            $content .= $this->putPrestadorInRps($rps);
+            $rps->config($this->config);
+            $content .= $rps->render();
         }
         $contentmsg = "<EnviarLoteRpsEnvio>"
             . "<LoteRps id=\"$lote\">"
@@ -171,10 +175,8 @@ class Tools extends BaseTools
             . "</ListaRps>"
             . "</LoteRps>"
             . "</EnviarLoteRpsEnvio>";
-
         $content = $this->sign($contentmsg, 'LoteRps', 'Id');
-        //Validator::isValid($content, $this->xsdpath);
+        //Tinus não usa XSD Validator::isValid($content, $this->xsdpath);
         return $this->send($content, $operation);
     }
-
 }
