@@ -40,9 +40,7 @@ Não deixe de se cadastrar no [grupo de discussão do NFePHP](http://groups.goog
 |7|Olinda|PE|2609600|
 |8|Mossoró|RN|2408003|
 |9|Parnamirim|RN|2403251|
-|10|Rio do Fogo|RN|2408953|
-|11|São Goncalo|RN|2412005|
-|12|Tibau do Sul|RN|2414209|
+|10|São Goncalo|RN|2412005|
 
 
 

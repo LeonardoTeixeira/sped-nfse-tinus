@@ -79,23 +79,5 @@
         "version": "1.00",
         "msgns": "http://www2.tinus.com.br/WSNFSE",
         "soapns": "http://www2.tinus.com.br"
-    },
-    "2408953": {
-        "municipio": "Rio do Fogo",
-        "uf": "RN",
-        "homologacao": "",
-        "producao": "http://www.tinus.com.br/csp/riodofogo/WSNFSE",
-        "version": "1.00",
-        "msgns": "http://www2.tinus.com.br/WSNFSE",
-        "soapns": "http://www2.tinus.com.br"
-    },
-    "2414209": {
-        "municipio": "Tibau do Sul",
-        "uf": "RN",
-        "homologacao": "",
-        "producao": "http://www.tinus.com.br/csp/tibaudosul/WSNFSE",
-        "version": "1.00",
-        "msgns": "http://www2.tinus.com.br/WSNFSE",
-        "soapns": "http://www2.tinus.com.br"
     }
 }
