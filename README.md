@@ -1,7 +1,5 @@
 # sped-nfse-tinus
 
-[![Join the chat at https://gitter.im/nfephp-org/sped-nfse-tinus](https://badges.gitter.im/nfephp-org/sped-nfse-tinus.svg)](https://gitter.im/nfephp-org/sped-nfse-tinus?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 Api para comunicação com webservices do [Provedor Tinus](https://www.tinus.com.br/)
 
 ## Esta API esta sendo testada para Parnamirim - RN
