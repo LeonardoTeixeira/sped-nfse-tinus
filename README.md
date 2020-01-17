@@ -6,9 +6,8 @@ Api para comunicação com webservices do [Provedor Tinus](https://www.tinus.com
 
 ## Esta API esta sendo testada para Parnamirim - RN
 
-*Utilize o chat do Gitter para iniciar discussões especificas sobre o desenvolvimento deste pacote.*
+*Utilize o [forum NFePHP](https://groups.google.com/forum/#!forum/nfephp) iniciar discussões especificas sobre o desenvolvimento deste pacote.*
 
-[![Chat][ico-gitter]][link-gitter]
 
 [![Latest Stable Version][ico-stable]][link-packagist]
 [![Build Status][ico-travis]][link-travis]
