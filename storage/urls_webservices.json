@@ -7,5 +7,68 @@
         "version": "1.00",
         "msgns": "http://www2.tinus.com.br/WSNFSE",
         "soapns": "http://www2.tinus.com.br"
+    },
+    "2408003": {
+        "municipio": "Mossoro",
+        "uf": "RN",
+        "homologacao": "http://www2.tinus.com.br/csp/testemos/WSNFSE.",
+        "producao": "http://www.tinus.com.br/csp/mossoro/WSNFSE",
+        "version": "1.00",
+        "msgns": "http://www2.tinus.com.br/WSNFSE",
+        "soapns": "http://www2.tinus.com.br"
+    },
+    "2412005": {
+        "municipio": "Sao Goncalo",
+        "uf": "RN",
+        "homologacao": "http://www2.tinus.com.br/csp/testegon/WSNFSE.",
+        "producao": "http://www.tinus.com.br/csp/saogoncalo/WSNFSE",
+        "version": "1.00",
+        "msgns": "http://www2.tinus.com.br/WSNFSE",
+        "soapns": "http://www2.tinus.com.br"
+    },
+    "2607901": {
+        "municipio": "Jaboatao dos Guararapes",
+        "uf": "PE",
+        "homologacao": "http://www2.tinus.com.br/csp/testejab/WSNFSE.",
+        "producao": "http://www.tinus.com.br/csp/jaboatao/WSNFSE",
+        "version": "1.00",
+        "msgns": "http://www2.tinus.com.br/WSNFSE",
+        "soapns": "http://www2.tinus.com.br"
+    },
+    "2609600": {
+        "municipio": "Olinda",
+        "uf": "PE",
+        "homologacao": "http://www2.tinus.com.br/csp/testeoli/WSNFSE.",
+        "producao": "http://www.tinus.com.br/csp/olinda/WSNFSE",
+        "version": "1.00",
+        "msgns": "http://www2.tinus.com.br/WSNFSE",
+        "soapns": "http://www2.tinus.com.br"
+    },
+    "2503209": {
+        "municipio": "Cabedelo",
+        "uf": "PB",
+        "homologacao": "http://www2.tinus.com.br/csp/testecbd/WSNFSE.",
+        "producao": "http://www.tinus.com.br/csp/cabedelo/WSNFSE",
+        "version": "1.00",
+        "msgns": "http://www2.tinus.com.br/WSNFSE",
+        "soapns": "http://www2.tinus.com.br"
+    },
+    "2603454": {
+        "municipio": "Camaragibe",
+        "uf": "PE",
+        "homologacao": "http://www2.tinus.com.br/csp/testecam/WSNFSE.",
+        "producao": "http://www.tinus.com.br/csp/camaragibe/WSNFSE",
+        "version": "1.00",
+        "msgns": "http://www2.tinus.com.br/WSNFSE",
+        "soapns": "http://www2.tinus.com.br"
+    },
+    "2407104": {
+        "municipio": "Macaiba",
+        "uf": "PE",
+        "homologacao": "http://www2.tinus.com.br/csp/testemac/WSNFSE.",
+        "producao": "http://www.tinus.com.br/csp/macaiba/WSNFSE",
+        "version": "1.00",
+        "msgns": "http://www2.tinus.com.br/WSNFSE",
+        "soapns": "http://www2.tinus.com.br"
     }
 }

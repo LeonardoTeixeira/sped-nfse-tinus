@@ -30,7 +30,21 @@ Este pacote é aderente com os [PSR-1], [PSR-2] e [PSR-4]. Se você observar neg
 
 Não deixe de se cadastrar no [grupo de discussão do NFePHP](http://groups.google.com/group/nfephp) para acompanhar o desenvolvimento e participar das discussões e tirar duvidas!
 
-**NOTA: Fique atento pois nem todas as cidades possuem ambientes de homologação.**
+## Municípios atendidos por esse provedor
+
+|n|Município|UF|IBGE|
+|:---:|:---|:---:|:---:|
+|1|Parnamirim|RN|2403251|
+|2|Mossoró|RN|2408003|
+|3|São Goncalo|RN|2412005|
+|4|Jaboatão dos Guararapes|PE|2607901|
+|5|Olinda|PE|2609600|
+|6|Cabedelo|PB|2503209|
+|7|Cabedelo|PB|2503209|
+|8|Camaragibe|PE|2603454|
+|9|Macaiba|PE|2407104|
+
+
 
 ## Dependências
 
@@ -87,6 +101,34 @@ Ou ainda alterando o composer.json do seu aplicativo inserindo:
     "nfephp-org/sped-nfse-tinus" : "^1.0"
 }
 ```
+
+## Comentários
+
+O mesmo segue a definição sugerida pela Abrasf, modelo 1.0, no entanto apresenta algumas particularidades:
+
+– Não permite Substituição de RPS.
+
+– O número do RPS deverá ser sequencial independente da série.
+
+– É obrigatório informar dados para o Tomador.
+
+1. Cancelamento NFS-e
+
+Notas Fiscais de Serviço Eletrônica canceladas não retornam o arquivo de xml de NFS-e com as informações que a mesma foi cancelada. O padrão Tinus não permite consultar documentos cancelados.
+
+2. Exemplo de XML
+
+Para visualizar um XML de exemplo clique aqui.
+
+Observação 1: “Para o Município de Jaboatão dos Guararapes/PE, é necessário realizar o pedido de liberação de uso para o ambiente de Produção e homologação. Sem esta liberação, o RPS enviado ficará com status pendente no InvoiCy.
+
+Para que a liberação seja realizada, o Município exige que seja enviado ao menos um RPS em homologação. Após envio deste RPS em homologação, o ERP receberá no retorno uma mensagem contendo o número do lote e o número do protocolo que aquele envio originou. Ex: Lote 12 enviado para processamento na prefeitura retornou protocolo 20131085123.
+
+Este número de lote e protocolo, deve ser enviado ao e-mail jneilton@gmail.com, com o Assunto “Liberação de emissão de NFS-e em Homologação– Município X, CNPJ xx.xxx.xxx/xxxx-xx”. O Sr. Neilton, fará então a validação do lote, e a liberação do RPS enviado.
+
+Após a validação do RPS enviado em homologação, será liberada a emissão em produção, pelo próprio Sr. Neilton.”
+
+> Observação 2: “O município de Jaboatão dos Guararapes/PE, possui processamento assíncrono, ou seja, recebe os RPS e os processa posteriormente. O tempo médio para retorno do processamento de um RPS é de até 30 minutos. Neste tempo, o ERP deverá disparar algumas consultas, até obter o status final do RPS.”. Todos os Lotes carregados são processados a cada meia-hora do relógio Ex. 16:30, 17:00, 17:30, 18:00, 18:30, etc.
 
 ## Forma de uso
 vide a pasta *Examples*
