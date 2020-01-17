@@ -12,7 +12,7 @@ namespace NFePHP\Tinus\Common;
  * @license   https://opensource.org/licenses/MIT MIT
  * @license   http://www.gnu.org/licenses/gpl.txt GPLv3+
  * @author    Roberto L. Machado <linux.rlm at gmail dot com>
- * @link      http://github.com/nfephp-org/sped-nfse-nacional for the canonical source repository
+ * @link      http://github.com/nfephp-org/sped-nfse-tinus for the canonical source repository
  */
 
 use DOMDocument;
@@ -66,19 +66,15 @@ class Signer
         if (empty($node) || empty($root)) {
             throw SignerException::tagNotFound($tagname);
         }
-        
-        //if (!self::existsSignature($content)) {
-            $dom = self::createSignature(
-                $certificate,
-                $dom,
-                $root,
-                $node,
-                $mark,
-                $algorithm,
-                $canonical
-            );
-        //}
-        
+        $dom = self::createSignature(
+            $certificate,
+            $dom,
+            $root,
+            $node,
+            $mark,
+            $algorithm,
+            $canonical
+        );
         return "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
             . $dom->saveXML($dom->documentElement, LIBXML_NOXMLDECL);
     }
@@ -108,17 +104,12 @@ class Signer
         $nsSignatureMethod = 'http://www.w3.org/2000/09/xmldsig#rsa-sha1';
         $nsDigestMethod = 'http://www.w3.org/2000/09/xmldsig#sha1';
         $digestAlgorithm = 'sha1';
-        if ($algorithm == OPENSSL_ALGO_SHA256) {
-            $digestAlgorithm = 'sha256';
-            $nsSignatureMethod = 'http://www.w3.org/2001/04/xmldsig-more#rsa-sha256';
-            $nsDigestMethod = 'http://www.w3.org/2001/04/xmlenc#sha256';
-        }
         $nsTransformMethod1 ='http://www.w3.org/2000/09/xmldsig#enveloped-signature';
         $nsTransformMethod2 = 'http://www.w3.org/TR/2001/REC-xml-c14n-20010315';
         $idSigned = trim($node->getAttribute($mark));
         $digestValue = self::makeDigest($node, $digestAlgorithm, $canonical);
         $signatureNode = $dom->createElementNS($nsDSIG, 'Signature');
-        $signatureNode->setAttribute('Id', 'Ass_'.$idSigned);
+        //$signatureNode->setAttribute('Id', 'Ass_'.$idSigned);
         
         $root->appendChild($signatureNode);
         $signedInfoNode = $dom->createElement('SignedInfo');

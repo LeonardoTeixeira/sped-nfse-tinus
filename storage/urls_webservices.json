@@ -9,7 +9,7 @@
         "soapns": "http://www2.tinus.com.br"
     },
     "2408003": {
-        "municipio": "Mossoro",
+        "municipio": "Mossoró",
         "uf": "RN",
         "homologacao": "http://www2.tinus.com.br/csp/testemos/WSNFSE.",
         "producao": "http://www.tinus.com.br/csp/mossoro/WSNFSE",
@@ -18,7 +18,7 @@
         "soapns": "http://www2.tinus.com.br"
     },
     "2412005": {
-        "municipio": "Sao Goncalo",
+        "municipio": "São Goncalo",
         "uf": "RN",
         "homologacao": "http://www2.tinus.com.br/csp/testegon/WSNFSE.",
         "producao": "http://www.tinus.com.br/csp/saogoncalo/WSNFSE",
@@ -27,7 +27,7 @@
         "soapns": "http://www2.tinus.com.br"
     },
     "2607901": {
-        "municipio": "Jaboatao dos Guararapes",
+        "municipio": "Jaboatão dos Guararapes",
         "uf": "PE",
         "homologacao": "http://www2.tinus.com.br/csp/testejab/WSNFSE.",
         "producao": "http://www.tinus.com.br/csp/jaboatao/WSNFSE",
@@ -67,6 +67,33 @@
         "uf": "PE",
         "homologacao": "http://www2.tinus.com.br/csp/testemac/WSNFSE.",
         "producao": "http://www.tinus.com.br/csp/macaiba/WSNFSE",
+        "version": "1.00",
+        "msgns": "http://www2.tinus.com.br/WSNFSE",
+        "soapns": "http://www2.tinus.com.br"
+    },
+    "2602902": {
+        "municipio": "Cabo de Santo Agostinho",
+        "uf": "PE",
+        "homologacao": "http://www2.tinus.com.br/csp/testecab/WSNFSE",
+        "producao": "http://www.tinus.com.br/csp/cabo/WSNFSE",
+        "version": "1.00",
+        "msgns": "http://www2.tinus.com.br/WSNFSE",
+        "soapns": "http://www2.tinus.com.br"
+    },
+    "2408953": {
+        "municipio": "Rio do Fogo",
+        "uf": "RN",
+        "homologacao": "",
+        "producao": "http://www.tinus.com.br/csp/riodofogo/WSNFSE",
+        "version": "1.00",
+        "msgns": "http://www2.tinus.com.br/WSNFSE",
+        "soapns": "http://www2.tinus.com.br"
+    },
+    "2414209": {
+        "municipio": "Tibau do Sul",
+        "uf": "RN",
+        "homologacao": "",
+        "producao": "http://www.tinus.com.br/csp/tibaudosul/WSNFSE",
         "version": "1.00",
         "msgns": "http://www2.tinus.com.br/WSNFSE",
         "soapns": "http://www2.tinus.com.br"

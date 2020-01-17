@@ -5,6 +5,17 @@ require_once '../bootstrap.php';
 
 use NFePHP\Tinus\Rps;
 
+$config = [
+    'cnpj'  => '99999999000191',
+    'im'    => '1733160024',
+    'cmun'  => '2403251',
+    'razao' => 'Empresa Test Ltda',
+    'tpamb' => 2
+];
+
+$config = (object) $config;
+
+
 $std = new \stdClass();
 $std->version = '1.00'; //indica qual JsonSchema USAR na validação
 $std->IdentificacaoRps = new \stdClass();
@@ -75,12 +86,8 @@ $std->ConstrucaoCivil->CodigoObra = '1234';
 $std->ConstrucaoCivil->Art = '1234';
 
 $rps = new Rps($std);
+$rps->config($config);
 
+header("Content-type: text/xml");
 echo $rps->render();
-
-/*
-echo "<pre>";
-print_r(json_encode($std));
-echo "</pre>";
-*/
 

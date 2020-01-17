@@ -12,7 +12,7 @@ namespace NFePHP\Tinus\Common;
  * @license   https://opensource.org/licenses/MIT MIT
  * @license   http://www.gnu.org/licenses/gpl.txt GPLv3+
  * @author    Roberto L. Machado <linux.rlm at gmail dot com>
- * @link      http://github.com/nfephp-org/sped-nfse-nacional for the canonical source repository
+ * @link      http://github.com/nfephp-org/sped-nfse-tinus for the canonical source repository
  */
 
 use DOMNode;
@@ -33,6 +33,10 @@ class Factory
      * @var DOMNode
      */
     protected $rps;
+    /**
+     * @var \stdClass
+     */
+    protected $config;
 
     /**
      * Constructor
@@ -46,6 +50,15 @@ class Factory
         $this->dom->preserveWhiteSpace = false;
         $this->dom->formatOutput = false;
         $this->rps = $this->dom->createElement('Rps');
+    }
+    
+    /**
+     * Adicona dos dados de configuração
+     * @param stdClass $config
+     */
+    public function addConfig(\stdClass $config)
+    {
+        $this->config = $config;
     }
 
     /**
@@ -107,7 +120,7 @@ class Factory
 
         $this->rps->appendChild($infRps);
         $this->dom->appendChild($this->rps);
-        return $this->dom->saveXML();
+        return $this->dom->saveXML($this->rps);
     }
 
     /**
@@ -134,6 +147,40 @@ class Factory
             $node,
             "Tipo",
             $id->tipo,
+            true
+        );
+        $parent->appendChild($node);
+    }
+    
+    /**
+     * Adiciona o Prestador com base nos daddos do config
+     * @param \DOMElement $parent
+     * @return void
+     */
+    protected function addPrestador(&$parent)
+    {
+        if (!isset($this->config)) {
+            return;
+        }
+        $node = $this->dom->createElement('Prestador');
+        $cpfcnpj = $this->dom->createElement('CpfCnpj');
+        $this->dom->addChild(
+            $cpfcnpj,
+            "Cnpj",
+            !empty($this->config->cnpj) ? $this->config->cnpj : null,
+            false
+        );
+        $this->dom->addChild(
+            $cpfcnpj,
+            "Cpf",
+            !empty($this->config->cpf) ? $this->config->cpf : null,
+            false
+        );
+        $node->appendChild($cpfcnpj);
+        $this->dom->addChild(
+            $node,
+            "InscricaoMunicipal",
+            $this->config->im,
             true
         );
         $parent->appendChild($node);
@@ -278,8 +325,8 @@ class Factory
         $this->dom->addChild(
             $node,
             "CodigoCnae",
-            $serv->codigocnae,
-            true
+            isset($serv->codigocnae) ? $serv->codigocnae : null,
+            false
         );
         $this->dom->addChild(
             $node,
@@ -430,32 +477,6 @@ class Factory
             );
         }
         $node->appendChild($cpfcnpj);
-        $this->dom->addChild(
-            $node,
-            "InscricaoMunicipal",
-            $int->inscricaomunicipal,
-            false
-        );
-        $parent->appendChild($node);
-    }
-
-    /**
-     * Includes Intermediario TAG in parent NODE
-     * @param DOMNode $parent
-     */
-    protected function addPrestador(&$parent)
-    {
-        if (!isset($this->std->prestador)) {
-            return;
-        }
-        $int = $this->std->prestador;
-        $node = $this->dom->createElement('Prestador');
-        $this->dom->addChild(
-            $node,
-            "Cnpj",
-            $int->cnpj,
-            true
-        );
         $this->dom->addChild(
             $node,
             "InscricaoMunicipal",

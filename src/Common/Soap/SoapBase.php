@@ -12,7 +12,7 @@ namespace NFePHP\Tinus\Common\Soap;
  * @license   https://opensource.org/licenses/MIT MIT
  * @license   http://www.gnu.org/licenses/gpl.txt GPLv3+
  * @author    Roberto L. Machado <linux.rlm at gmail dot com>
- * @link      http://github.com/nfephp-org/sped-nfse-nacional for the canonical source repository
+ * @link      http://github.com/nfephp-org/sped-nfse-tinus for the canonical source repository
  */
 
 use League\Flysystem\Adapter\Local;
@@ -153,8 +153,7 @@ abstract class SoapBase implements SoapInterface
     public function __construct(
         Certificate $certificate = null,
         LoggerInterface $logger = null
-    )
-    {
+    ) {
         $this->logger = $logger;
         $this->certificate = $this->checkCertValidity($certificate);
         $this->setTemporaryFolder(sys_get_temp_dir() . '/sped/');
@@ -348,8 +347,7 @@ abstract class SoapBase implements SoapInterface
         $namespaces,
         $soapver = SOAP_1_2,
         $header = null
-    )
-    {
+    ) {
         $prefix = $this->prefixes[$soapver];
         $envelope = "<$prefix:Envelope";
         foreach ($namespaces as $key => $value) {

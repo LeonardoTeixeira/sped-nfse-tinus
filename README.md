@@ -1,8 +1,8 @@
 # sped-nfse-tinus
 
-[![Join the chat at https://gitter.im/nfephp-org/sped-nfse-nacional](https://badges.gitter.im/nfephp-org/sped-nfse-nacional.svg)](https://gitter.im/nfephp-org/sped-nfse-nacional?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/nfephp-org/sped-nfse-tinus](https://badges.gitter.im/nfephp-org/sped-nfse-tinus.svg)](https://gitter.im/nfephp-org/sped-nfse-tinus?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Api para comunicação com webservices do Projeto NFSe Nacional
+Api para comunicação com webservices do [Provedor Tinus](https://www.tinus.com.br/)
 
 ## Esta API esta sendo testada para Parnamirim - RN
 
@@ -34,15 +34,18 @@ Não deixe de se cadastrar no [grupo de discussão do NFePHP](http://groups.goog
 
 |n|Município|UF|IBGE|
 |:---:|:---|:---:|:---:|
-|1|Parnamirim|RN|2403251|
-|2|Mossoró|RN|2408003|
-|3|São Goncalo|RN|2412005|
-|4|Jaboatão dos Guararapes|PE|2607901|
-|5|Olinda|PE|2609600|
-|6|Cabedelo|PB|2503209|
-|7|Cabedelo|PB|2503209|
-|8|Camaragibe|PE|2603454|
-|9|Macaiba|PE|2407104|
+|1|Cabedelo|PB|2503209|
+|2|Cabo de Santo Agostinho|PE|2602902|
+|3|Camaragibe|PE|2603454|
+|4|Camaragibe|PE|2603454|
+|5|Jaboatão dos Guararapes|PE|2607901|
+|6|Macaiba|PE|2407104|
+|7|Olinda|PE|2609600|
+|8|Mossoró|RN|2408003|
+|9|Parnamirim|RN|2403251|
+|10|Rio do Fogo|RN|2408953|
+|11|São Goncalo|RN|2412005|
+|12|Tibau do Sul|RN|2414209|
 
 
 
@@ -116,9 +119,7 @@ O mesmo segue a definição sugerida pela Abrasf, modelo 1.0, no entanto apresen
 
 Notas Fiscais de Serviço Eletrônica canceladas não retornam o arquivo de xml de NFS-e com as informações que a mesma foi cancelada. O padrão Tinus não permite consultar documentos cancelados.
 
-2. Exemplo de XML
-
-Para visualizar um XML de exemplo clique aqui.
+2. Considerações
 
 Observação 1: “Para o Município de Jaboatão dos Guararapes/PE, é necessário realizar o pedido de liberação de uso para o ambiente de Produção e homologação. Sem esta liberação, o RPS enviado ficará com status pendente no InvoiCy.
 
@@ -148,30 +149,35 @@ Caso você encontre algum problema relativo a segurança, por favor envie um ema
 
 Cleiton Perin (owner and developer)
 
+## Agradecimentos
+
+Agradecemos o suporte oferecido pelo provedor TINUS para os ajustes nesta biblioteca.
+É um caso muito raro de colaboração dentre todos os provedores de serviços para as prefeituras que habitualmente não fornecem qualquer tipo de auxilio para a integração com pacotes OpenSource.
+
 ## License
 
 Este pacote está diponibilizado sob LGPLv3 ou MIT License (MIT). Leia  [Arquivo de Licença](LICENSE.md) para maiores informações.
 
 
-[ico-stable]: https://poser.pugx.org/nfephp-org/sped-nfse-nacional/version
-[ico-stars]: https://img.shields.io/github/stars/nfephp-org/sped-nfse-nacional.svg?style=flat-square
-[ico-forks]: https://img.shields.io/github/forks/nfephp-org/sped-nfse-nacional.svg?style=flat-square
-[ico-issues]: https://img.shields.io/github/issues/nfephp-org/sped-nfse-nacional.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/nfephp-org/sped-nfse-nacional/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/nfephp-org/sped-nfse-nacional.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/nfephp-org/sped-nfse-nacional.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/nfephp-org/sped-nfse-nacional.svg?style=flat-square
-[ico-version]: https://img.shields.io/packagist/v/nfephp-org/sped-nfse-nacional.svg?style=flat-square
+[ico-stable]: https://poser.pugx.org/nfephp-org/sped-nfse-tinus/version
+[ico-stars]: https://img.shields.io/github/stars/nfephp-org/sped-nfse-tinus.svg?style=flat-square
+[ico-forks]: https://img.shields.io/github/forks/nfephp-org/sped-nfse-tinus.svg?style=flat-square
+[ico-issues]: https://img.shields.io/github/issues/nfephp-org/sped-nfse-tinus.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/nfephp-org/sped-nfse-tinus/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/nfephp-org/sped-nfse-tinus.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/nfephp-org/sped-nfse-tinus.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/nfephp-org/sped-nfse-tinus.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/nfephp-org/sped-nfse-tinus.svg?style=flat-square
 [ico-license]: https://poser.pugx.org/nfephp-org/nfephp/license.svg?style=flat-square
 [ico-gitter]: https://img.shields.io/badge/GITTER-4%20users%20online-green.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/nfephp-org/sped-nfse-nacional
-[link-travis]: https://travis-ci.org/nfephp-org/sped-nfse-nacional
-[link-scrutinizer]: https://scrutinizer-ci.com/g/nfephp-org/sped-nfse-nacional/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/nfephp-org/sped-nfse-nacional
-[link-downloads]: https://packagist.org/packages/nfephp-org/sped-nfse-nacional
+[link-packagist]: https://packagist.org/packages/nfephp-org/sped-nfse-tinus
+[link-travis]: https://travis-ci.org/nfephp-org/sped-nfse-tinus
+[link-scrutinizer]: https://scrutinizer-ci.com/g/nfephp-org/sped-nfse-tinus/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/nfephp-org/sped-nfse-tinus
+[link-downloads]: https://packagist.org/packages/nfephp-org/sped-nfse-tinus
 [link-author]: https://github.com/nfephp-org
-[link-issues]: https://github.com/nfephp-org/sped-nfse-nacional/issues
-[link-forks]: https://github.com/nfephp-org/sped-nfse-nacional/network
-[link-stars]: https://github.com/nfephp-org/sped-nfse-nacional/stargazers
-[link-gitter]: https://gitter.im/nfephp-org/sped-nfse-nacional?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+[link-issues]: https://github.com/nfephp-org/sped-nfse-tinus/issues
+[link-forks]: https://github.com/nfephp-org/sped-nfse-tinus/network
+[link-stars]: https://github.com/nfephp-org/sped-nfse-tinus/stargazers
+[link-gitter]: https://gitter.im/nfephp-org/sped-nfse-tinus?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge

@@ -12,7 +12,7 @@ namespace NFePHP\Tinus\Common;
  * @license   https://opensource.org/licenses/MIT MIT
  * @license   http://www.gnu.org/licenses/gpl.txt GPLv3+
  * @author    Cleiton Perin <cperin20 at gmail dot com>
- * @link      http://github.com/nfephp-org/sped-nfse-nacional for the canonical source repository
+ * @link      http://github.com/nfephp-org/sped-nfse-tinus for the canonical source repository
  */
 
 use NFePHP\Common\Certificate;
@@ -155,6 +155,9 @@ class Tools
      */
     protected function extractContentFromResponse($response, $operation)
     {
+        if (substr($response, 0, 1) !== '<') {
+            return $response;
+        }
         $dom = new Dom('1.0', 'UTF-8');
         $dom->preserveWhiteSpace = false;
         $dom->formatOutput = false;
