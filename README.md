@@ -34,13 +34,12 @@ Não deixe de se cadastrar no [grupo de discussão do NFePHP](http://groups.goog
 |1|Cabedelo|PB|2503209|
 |2|Cabo de Santo Agostinho|PE|2602902|
 |3|Camaragibe|PE|2603454|
-|4|Camaragibe|PE|2603454|
-|5|Jaboatão dos Guararapes|PE|2607901|
-|6|Macaiba|PE|2407104|
-|7|Olinda|PE|2609600|
-|8|Mossoró|RN|2408003|
-|9|Parnamirim|RN|2403251|
-|10|São Goncalo|RN|2412005|
+|4|Jaboatão dos Guararapes|PE|2607901|
+|5|Macaiba|PE|2407104|
+|6|Olinda|PE|2609600|
+|7|Mossoró|RN|2408003|
+|8|Parnamirim|RN|2403251|
+|9|São Goncalo|RN|2412005|
 
 
 
