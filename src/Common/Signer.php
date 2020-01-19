@@ -3,7 +3,7 @@
 namespace NFePHP\NFSeTinus\Common;
 
 /**
- * Class for signing XML in Nacional Standard NFSe
+ * Class for signing XML in Tinus Standard NFSe
  *
  * @category  NFePHP
  * @package   NFePHP\NFSeTinus
