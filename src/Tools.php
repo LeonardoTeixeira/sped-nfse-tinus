@@ -1,12 +1,12 @@
 <?php
 
-namespace NFePHP\Tinus;
+namespace NFePHP\NFSeTinus;
 
 /**
  * Class for comunications with NFSe Tinus Provider
  *
  * @category  NFePHP
- * @package   NFePHP\Tinus
+ * @package   NFePHP\NFSeTinus
  * @copyright NFePHP Copyright (c) 2020
  * @license   http://www.gnu.org/licenses/lgpl.txt LGPLv3+
  * @license   https://opensource.org/licenses/MIT MIT
@@ -16,7 +16,7 @@ namespace NFePHP\Tinus;
  */
 
 use NFePHP\Common\Certificate;
-use NFePHP\Tinus\Common\Tools as BaseTools;
+use NFePHP\NFSeTinus\Common\Tools as BaseTools;
 
 class Tools extends BaseTools
 {

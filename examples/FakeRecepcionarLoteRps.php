@@ -4,9 +4,9 @@ ini_set('display_errors', 'On');
 require_once '../bootstrap.php';
 
 use NFePHP\Common\Certificate;
-use NFePHP\Tinus\Common\Soap\SoapFake;
-use NFePHP\Tinus\Rps;
-use NFePHP\Tinus\Tools;
+use NFePHP\NFSeTinus\Common\Soap\SoapFake;
+use NFePHP\NFSeTinus\Rps;
+use NFePHP\NFSeTinus\Tools;
 
 try {
 
@@ -110,7 +110,7 @@ try {
     $lote = '123456';
     $response = $tools->recepcionarLoteRps($arps, $lote);
 
-    echo \NFePHP\Tinus\Common\FakePretty::prettyPrint($response, '');
+    echo \NFePHP\NFSeTinus\Common\FakePretty::prettyPrint($response, '');
 
 } catch (\Exception $e) {
     echo $e->getMessage();

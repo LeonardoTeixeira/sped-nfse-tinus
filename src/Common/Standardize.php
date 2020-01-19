@@ -1,13 +1,13 @@
 <?php
 
-namespace NFePHP\Tinus\Common;
+namespace NFePHP\NFSeTinus\Common;
 
 /**
  * Class for identification of eletronic documents in xml
  * used for comunications an convertion to other formats
  *
  * @category  library
- * @package   NFePHP\Tinus
+ * @package   NFePHP\NFSeTinus
  * @copyright NFePHP Copyright (c) 2017
  * @license   http://www.gnu.org/licenses/lgpl.txt LGPLv3+
  * @license   https://opensource.org/licenses/MIT MIT

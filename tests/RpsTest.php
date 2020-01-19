@@ -1,8 +1,8 @@
 <?php
 
-namespace NFePHP\Tinus\Tests;
+namespace NFePHP\NFSeTinus\Tests;
 
-use NFePHP\Tinus\Rps;
+use NFePHP\NFSeTinus\Rps;
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
 use ReflectionMethod;
@@ -72,7 +72,7 @@ class RpsTest extends TestCase
     public function testCanInstantiate()
     {
         $rps = new Rps();
-        $this->assertInstanceOf('NFePHP\Tinus\Rps', $rps);
+        $this->assertInstanceOf('NFePHP\NFSeTinus\Rps', $rps);
     }
     
     /**

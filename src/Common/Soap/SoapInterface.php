@@ -1,12 +1,12 @@
 <?php
 
-namespace NFePHP\Tinus\Common\Soap;
+namespace NFePHP\NFSeTinus\Common\Soap;
 
 /**
  * Soap class interface
  *
  * @category  NFePHP
- * @package   NFePHP\Tinus
+ * @package   NFePHP\NFSeTinus
  * @copyright NFePHP Copyright (c) 2016
  * @license   http://www.gnu.org/licenses/lgpl.txt LGPLv3+
  * @license   https://opensource.org/licenses/MIT MIT

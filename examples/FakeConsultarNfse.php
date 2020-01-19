@@ -4,9 +4,9 @@ ini_set('display_errors', 'On');
 require_once '../bootstrap.php';
 
 use NFePHP\Common\Certificate;
-use NFePHP\Tinus\Common\Soap\SoapFake;
-use NFePHP\Tinus\Tools;
-use NFePHP\Tinus\Common\FakePretty;
+use NFePHP\NFSeTinus\Common\Soap\SoapFake;
+use NFePHP\NFSeTinus\Tools;
+use NFePHP\NFSeTinus\Common\FakePretty;
 
 try {
 

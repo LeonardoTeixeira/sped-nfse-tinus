@@ -1,12 +1,12 @@
 <?php
 
-namespace NFePHP\Tinus\Common;
+namespace NFePHP\NFSeTinus\Common;
 
 /**
  * Class for RPS XML convertion
  *
  * @category  NFePHP
- * @package   NFePHP\Tinus
+ * @package   NFePHP\NFSeTinus
  * @copyright NFePHP Copyright (c) 2008-2018
  * @license   http://www.gnu.org/licenses/lgpl.txt LGPLv3+
  * @license   https://opensource.org/licenses/MIT MIT

@@ -1,6 +1,6 @@
 <?php
 
-namespace NFePHP\Tinus\Tests;
+namespace NFePHP\NFSeTinus\Tests;
 
 use PHPUnit\Framework\TestCase;
 

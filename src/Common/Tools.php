@@ -1,12 +1,12 @@
 <?php
 
-namespace NFePHP\Tinus\Common;
+namespace NFePHP\NFSeTinus\Common;
 
 /**
  * Auxiar Tools Class for comunications with NFSe webserver in Nacional Standard
  *
  * @category  NFePHP
- * @package   NFePHP\Tinus
+ * @package   NFePHP\NFSeTinus
  * @copyright NFePHP Copyright (c) 2008-2020
  * @license   http://www.gnu.org/licenses/lgpl.txt LGPLv3+
  * @license   https://opensource.org/licenses/MIT MIT
@@ -17,9 +17,9 @@ namespace NFePHP\Tinus\Common;
 
 use NFePHP\Common\Certificate;
 use NFePHP\Common\DOMImproved as Dom;
-use NFePHP\Tinus\Common\Soap\SoapCurl;
-use NFePHP\Tinus\Common\Soap\SoapInterface;
-use NFePHP\Tinus\RpsInterface;
+use NFePHP\NFSeTinus\Common\Soap\SoapCurl;
+use NFePHP\NFSeTinus\Common\Soap\SoapInterface;
+use NFePHP\NFSeTinus\RpsInterface;
 
 class Tools
 {

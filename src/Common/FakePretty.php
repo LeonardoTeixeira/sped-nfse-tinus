@@ -1,13 +1,13 @@
 <?php
 
-namespace NFePHP\Tinus\Common;
+namespace NFePHP\NFSeTinus\Common;
 
 /**
  * Class FakePretty shows event and fake comunication data
  * for analises and debugging only
  *
  * @category  API
- * @package   NFePHP\Tinus
+ * @package   NFePHP\NFSeTinus
  * @copyright NFePHP Copyright (c) 2017
  * @license   http://www.gnu.org/licenses/lgpl.txt LGPLv3+
  * @license   https://opensource.org/licenses/MIT MIT

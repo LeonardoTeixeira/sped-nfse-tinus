@@ -1,6 +1,6 @@
 <?php
 
-namespace NFePHP\Tinus\Common\Soap;
+namespace NFePHP\NFSeTinus\Common\Soap;
 
 /**
  * SoapCode return a description os HTTP Codes returned from server
@@ -9,7 +9,7 @@ namespace NFePHP\Tinus\Common\Soap;
  * The codes and their descriptions are stored in a json file in the same folder
  *
  * @category  NFePHP
- * @package   NFePHP\Tinus
+ * @package   NFePHP\NFSeTinus
  * @copyright NFePHP Copyright (c) 2016
  * @license   http://www.gnu.org/licenses/lgpl.txt LGPLv3+
  * @license   https://opensource.org/licenses/MIT MIT

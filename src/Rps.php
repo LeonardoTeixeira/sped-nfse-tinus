@@ -1,12 +1,12 @@
 <?php
 
-namespace NFePHP\Tinus;
+namespace NFePHP\NFSeTinus;
 
 /**
  * Class for RPS construction and validation of data
  *
  * @category  NFePHP
- * @package   NFePHP\Tinus
+ * @package   NFePHP\NFSeTinus
  * @copyright NFePHP Copyright (c) 2020
  * @license   http://www.gnu.org/licenses/lgpl.txt LGPLv3+
  * @license   https://opensource.org/licenses/MIT MIT
@@ -16,7 +16,7 @@ namespace NFePHP\Tinus;
  */
 
 use JsonSchema\Validator as JsonValid;
-use NFePHP\Tinus\Common\Factory;
+use NFePHP\NFSeTinus\Common\Factory;
 use stdClass;
 
 class Rps implements RpsInterface

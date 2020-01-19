@@ -37,12 +37,12 @@
     },
     "autoload": {
         "psr-4": {
-          "NFePHP\\Tinus\\": "src/"
+          "NFePHP\\NFSeTinus\\": "src/"
         } 
     },
     "autoload-dev": {
         "psr-4": {
-            "NFePHP\\Tinus\\Tests\\": "tests/"
+            "NFePHP\\NFSeTinus\\Tests\\": "tests/"
         }
     },
     "scripts": {
