@@ -39,11 +39,11 @@ class Standardize
         'ConsultarNfseEnvio',
         'ConsultarNfseRpsEnvio',
         'EnviarLoteRpsEnvio',
-        'CancelarNfseResposta',
-        'ConsultarLoteRpsResposta',
-        'ConsultarNfseResposta',
-        'ConsultarNfseRpsResposta',
-        'EnviarLoteRpsResposta',
+        'CancelarNfseResponse',
+        'ConsultarLoteRpsResponse',
+        'ConsultarNfseResponse',
+        'ConsultarNfseRpsResponse',
+        'EnviarLoteRpsResponse',
         'RPS'
     ];
     
