@@ -43,7 +43,7 @@ class Tools extends BaseTools
      * @param integer $codigo
      * @return string
      */
-    public function cancelarNfse($numero, $codigo = self::ERRO_EMISSAO)
+    public function cancelarNfse($numero, $codigo = self::ERRO_EMISSAO, $id = null)
     {
         $operation = 'CancelarNfse';
         $pedido = "<Pedido>"
@@ -58,7 +58,7 @@ class Tools extends BaseTools
             . "</InfPedidoCancelamento>"
             . "</Pedido>";
 
-        $signed = $this->sign($pedido, 'InfPedidoCancelamento', 'Id');
+        $signed = $this->sign($pedido, 'InfPedidoCancelamento', '');
         $content = "<CancelarNfseEnvio>"
             . $signed
             . "</CancelarNfseEnvio>";
@@ -165,7 +165,7 @@ class Tools extends BaseTools
             $content .= $rps->render();
         }
         $contentmsg = "<EnviarLoteRpsEnvio>"
-            . "<LoteRps id=\"$lote\">"
+            . "<LoteRps Id=\"$lote\">"
             . "<NumeroLote>$lote</NumeroLote>"
             . "<Cnpj>" . $this->config->cnpj . "</Cnpj>"
             . "<InscricaoMunicipal>" . $this->config->im . "</InscricaoMunicipal>"

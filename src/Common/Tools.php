@@ -192,32 +192,4 @@ class Tools
         return $env;
     }
 
-    /**
-     * Create tag Prestador and insert into RPS xml
-     * @param RpsInterface $rps
-     * @return string RPS XML (not signed)
-     */
-    protected function putPrestadorInRps(RpsInterface $rps)
-    {
-        $dom = new Dom('1.0', 'UTF-8');
-        $dom->preserveWhiteSpace = false;
-        $dom->formatOutput = false;
-        $dom->loadXML($rps->render());
-        $referenceNode = $dom->getElementsByTagName('Servico')->item(0);
-        $node = $dom->createElement('Prestador');
-        $dom->addChild(
-            $node,
-            "Cnpj",
-            $this->config->cnpj,
-            true
-        );
-        $dom->addChild(
-            $node,
-            "InscricaoMunicipal",
-            $this->config->im,
-            true
-        );
-        $dom->insertAfter($node, $referenceNode);
-        return $dom->saveXML($dom->documentElement);
-    }
 }

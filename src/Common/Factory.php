@@ -69,7 +69,7 @@ class Factory
     public function render()
     {
         $infRps = $this->dom->createElement('InfRps');
-        $att = $this->dom->createAttribute('id');
+        $att = $this->dom->createAttribute('Id');
         $att->value = $this->std->identificacaorps->numero;
         $infRps->appendChild($att);
 
@@ -163,20 +163,18 @@ class Factory
             return;
         }
         $node = $this->dom->createElement('Prestador');
-        $cpfcnpj = $this->dom->createElement('CpfCnpj');
         $this->dom->addChild(
-            $cpfcnpj,
+            $node,
             "Cnpj",
             !empty($this->config->cnpj) ? $this->config->cnpj : null,
             false
         );
         $this->dom->addChild(
-            $cpfcnpj,
+            $node,
             "Cpf",
             !empty($this->config->cpf) ? $this->config->cpf : null,
             false
         );
-        $node->appendChild($cpfcnpj);
         $this->dom->addChild(
             $node,
             "InscricaoMunicipal",

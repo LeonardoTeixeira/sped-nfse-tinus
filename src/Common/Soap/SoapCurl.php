@@ -81,8 +81,6 @@ class SoapCurl extends SoapBase implements SoapInterface
                 curl_setopt($oCurl, CURLOPT_POSTFIELDS, $envelope);
                 curl_setopt($oCurl, CURLOPT_HTTPHEADER, $parameters);
             }
-            //header("Content-type: text/plain");
-            //echo $envelope;exit;
             $response = curl_exec($oCurl);
             $this->soaperror = curl_error($oCurl);
             $ainfo = curl_getinfo($oCurl);
