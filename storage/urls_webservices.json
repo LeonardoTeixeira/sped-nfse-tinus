@@ -79,5 +79,14 @@
         "version": "1.00",
         "msgns": "http://www2.tinus.com.br/WSNFSE",
         "soapns": "http://www2.tinus.com.br"
+    },
+    "2606002": {
+        "municipio": "Garanhuns",
+        "uf": "PE",
+        "homologacao": "http://www2.tinus.com.br/csp/testegar/WSNFSE",
+        "producao": "http://www.tinus.com.br/csp/garanhuns/WSNFSE",
+        "version": "1.00",
+        "msgns": "http://www2.tinus.com.br/WSNFSE",
+        "soapns": "http://www2.tinus.com.br"
     }
 }

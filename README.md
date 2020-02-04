@@ -40,6 +40,7 @@ Não deixe de se cadastrar no [grupo de discussão do NFePHP](http://groups.goog
 |7|Mossoró|RN|2408003|
 |8|Parnamirim|RN|2403251|
 |9|São Goncalo|RN|2412005|
+|10|Garanhuns|PE|2606002|
 
 
 
